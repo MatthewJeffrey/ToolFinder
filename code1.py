@@ -20,7 +20,7 @@ df_word = pd.read_excel(file_path, sheet_name='Word', usecols=['Category', 'Rele
 df_number = pd.read_excel(file_path, sheet_name='Number', usecols=['Category', 'Number', 'Bin'])
 
 # Define the path for the images (outside of the conditional blocks)
-image_folder = r"C:\Users\matth\Downloads\Photo"
+#image_folder = r"C:\Users\matth\Downloads\Photo"
 
 # Apply custom CSS for futuristic design
 st.markdown(
@@ -114,15 +114,15 @@ with col1:
                 st.write(f"Part Number: **{part_number_word}**")
                 
                 # Define the path for the image based on the category
-                image_path_word = os.path.join(image_folder, f"{category.lower()}.jpg")
+                #image_path_word = os.path.join(image_folder, f"{category.lower()}.jpg")
                 
                 # Check if the image exists and display it
-                if os.path.exists(image_path_word):
-                    st.image(image_path_word, caption=f"Image for {category}", use_column_width=True)
-                else:
-                    st.write(f"No image available for {category}.")
-        else:
-            st.write("No matching categories found.")
+                #if os.path.exists(image_path_word):
+                    #st.image(image_path_word, caption=f"Image for {category}", use_column_width=True)
+                #else:
+                    #st.write(f"No image available for {category}.")
+        #else:
+            #st.write("No matching categories found.")
 
 # Right column: Number-based search
 with col2:
@@ -154,10 +154,10 @@ with col2:
         st.write(f'Bin Location: **{bin_location_number}**')
 
         # Define the path for the image based on the predicted category
-        image_path_number = os.path.join(image_folder, f"{str(predicted_category_number).lower()}.jpg")
+        #image_path_number = os.path.join(image_folder, f"{str(predicted_category_number).lower()}.jpg")
 
         # Check if the image exists and display it
-        if os.path.exists(image_path_number):
-            st.image(image_path_number, caption=f"Image for {predicted_category_number}", use_column_width=True)
-        else:
-            st.write("Image not found.")
+        #if os.path.exists(image_path_number):
+            #st.image(image_path_number, caption=f"Image for {predicted_category_number}", use_column_width=True)
+        #else:
+            #st.write("Image not found.")
