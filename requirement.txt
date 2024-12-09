@@ -1,0 +1,7 @@
+streamlit
+pandas
+os
+scikit-learn
+CountVectorizer
+MultinomialNB
+make_pipeline
