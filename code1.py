@@ -15,7 +15,7 @@ import os
 st.set_page_config(layout="wide", page_title="Tool Finder for Electric Vehicle")
 
 # Load data from Excel file (two sheets: Word and Number)
-file_path = r"C:\Users\matth\Downloads\Database Master.xlsx"
+file_path = "Database Master.xlsx"
 df_word = pd.read_excel(file_path, sheet_name='Word', usecols=['Category', 'Relevant Word', 'Bin Location','Part Number'])
 df_number = pd.read_excel(file_path, sheet_name='Number', usecols=['Category', 'Number', 'Bin'])
 
