@@ -6,3 +6,6 @@ CountVectorizer
 MultinomialNB
 make_pipeline
 sklearn
+sklearn.feature_extraction.text
+sklearn.naive_bayes
+sklearn.pipeline
